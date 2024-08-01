@@ -2,8 +2,8 @@ const path = require('path')
 module.exports = {
   version: "2.0",
   title: "stable-fast-3d",
-  description: "",
-  icon: "icon.png",
+  description: "[NVIDIA ONLY] a state-of-the-art open-source model for fast feedforward 3D mesh reconstruction from a single image, from Stability AI. https://huggingface.co/spaces/stabilityai/stable-fast-3d",
+  icon: "icon.gif",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
     let running = {

@@ -5,7 +5,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://huggingface.co/cocktailpeanut/sf3d app",
+          "git clone https://huggingface.co/spaces/cocktailpeanut/stable-fast-3d app",
         ]
       }
     },
@@ -29,6 +29,7 @@ module.exports = {
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
           "pip install gradio devicetorch",
+          "pip install {{gpu == 'nvidia' ? 'rembg[gpu]' : 'rembg'}}",
           "pip install -r requirements.txt"
         ]
       }
